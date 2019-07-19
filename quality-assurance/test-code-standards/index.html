@@ -418,6 +418,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#test-and-defect-management" title="Test and Defect Management" class="md-nav__link">
+    Test and Defect Management
+  </a>
+  
+</li>
+      
       
       
       
@@ -537,6 +544,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#test-and-defect-management" title="Test and Defect Management" class="md-nav__link">
+    Test and Defect Management
+  </a>
+  
+</li>
+      
       
       
       
@@ -561,6 +575,7 @@
 <li>API Testing</li>
 <li>UI Testing</li>
 <li>Gherkin</li>
+<li>Test and Defect Management</li>
 </ol>
 <h2 id="c-and-java">C# and Java</h2>
 <ul>
@@ -588,12 +603,18 @@
 </ul>
 <h2 id="gherkin">Gherkin</h2>
 <ul>
+<li>Consider whether using Gherkin is required - will it add value or can the extra technical layer be avoided</li>
 <li>Feature name should reflect the area being tested</li>
 <li>Scenario name should reflect the purpose of the test, e.g. “Ensure two numbers are added correctly” rather than “add two numbers” or “add”</li>
 <li>Similar scenarios should be in one feature file – a feature file should only contain similar scenarios</li>
 <li>Ensure only one result is tested per scenario, try to avoid having too many assertions, better to split into different scenarios</li>
 <li>Move repeated steps into a Background</li>
 <li>Perform technical setup and teardown in the Steps classes, not in the Gherkin.</li>
+</ul>
+<h2 id="test-and-defect-management">Test and Defect Management</h2>
+<ul>
+<li>For C# projects, unit and SpecFlow tests should exist in separate projects</li>
+<li>Open defects should be managed, a regular team/project review session is recommended </li>
 </ul>
                 
                   
