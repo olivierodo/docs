@@ -36,7 +36,7 @@
     
     
       
-        <title>CONTRIBUTING.md Details - UKHO Docs</title>
+        <title>Installing Citrix Receiver on Linux - UKHO Docs</title>
       
     
     
@@ -75,7 +75,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#contributingmd-details" tabindex="1" class="md-skip">
+      <a href="#installing-citrix-receiver-on-linux" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -100,7 +100,7 @@
               UKHO Docs
             </span>
             <span class="md-header-nav__topic">
-              CONTRIBUTING.md Details
+              Installing Citrix Receiver on Linux
             </span>
           
         </div>
@@ -190,10 +190,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Linux workstations
@@ -211,49 +213,11 @@
 
 
   <li class="md-nav__item">
-    <a href="../../linux-workstations/" title="Introduction" class="md-nav__link">
+    <a href="../" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
 
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../linux-workstations/citrix/" title="Installing Citrix Receiver on Linux" class="md-nav__link">
-      Installing Citrix Receiver on Linux
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
-    
-    <label class="md-nav__link" for="nav-4">
-      Open guidance
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        Open guidance
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
         
           
           
@@ -270,11 +234,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        CONTRIBUTING.md Details
+        Installing Citrix Receiver on Linux
       </label>
     
-    <a href="./" title="CONTRIBUTING.md Details" class="md-nav__link md-nav__link--active">
-      CONTRIBUTING.md Details
+    <a href="./" title="Installing Citrix Receiver on Linux" class="md-nav__link md-nav__link--active">
+      Installing Citrix Receiver on Linux
     </a>
     
       
@@ -288,43 +252,70 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" title="Overview" class="md-nav__link">
-    Overview
+  <a href="#download-and-install-citrix-receiver" title="Download and install Citrix Receiver" class="md-nav__link">
+    Download and install Citrix Receiver
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-certificates" title="Configure certificates" class="md-nav__link">
+    Configure certificates
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#must-have" title="Must Have" class="md-nav__link">
-    Must Have
+  <a href="#ubuntu" title="Ubuntu" class="md-nav__link">
+    Ubuntu
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#may-have" title="May Have" class="md-nav__link">
-    May Have
+  <a href="#fedora" title="Fedora" class="md-nav__link">
+    Fedora
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-the-certificates-from-an-ubuntu-install" title="Get the certificates from an Ubuntu install" class="md-nav__link">
+    Get the certificates from an Ubuntu install
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#resources" title="Resources" class="md-nav__link">
-    Resources
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#examples" title="Examples" class="md-nav__link">
-    Examples
+  <a href="#install-the-certificates-on-the-fedora-machine" title="Install the certificates on the Fedora machine" class="md-nav__link">
+    Install the certificates on the Fedora machine
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-distros" title="Other distros" class="md-nav__link">
+    Other distros
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#todo" title="TODO" class="md-nav__link">
+    TODO
+  </a>
   
 </li>
       
@@ -339,13 +330,49 @@
   </li>
 
         
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Open guidance
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Open guidance
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
           
           
           
 
 
   <li class="md-nav__item">
-    <a href="../migration/" title="Migrating an existing project" class="md-nav__link">
+    <a href="../../open-guidance/contributing-details/" title="CONTRIBUTING.md Details" class="md-nav__link">
+      CONTRIBUTING.md Details
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../open-guidance/migration/" title="Migrating an existing project" class="md-nav__link">
       Migrating an existing project
     </a>
   </li>
@@ -357,7 +384,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../open-guidance/" title="Open-Guidance" class="md-nav__link">
+    <a href="../../open-guidance/open-guidance/" title="Open-Guidance" class="md-nav__link">
       Open-Guidance
     </a>
   </li>
@@ -369,7 +396,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../pull-request-details/" title="Making a Pull Request" class="md-nav__link">
+    <a href="../../open-guidance/pull-request-details/" title="Making a Pull Request" class="md-nav__link">
       Making a Pull Request
     </a>
   </li>
@@ -381,7 +408,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../readme-details/" title="README.md Details" class="md-nav__link">
+    <a href="../../open-guidance/readme-details/" title="README.md Details" class="md-nav__link">
       README.md Details
     </a>
   </li>
@@ -677,43 +704,70 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" title="Overview" class="md-nav__link">
-    Overview
+  <a href="#download-and-install-citrix-receiver" title="Download and install Citrix Receiver" class="md-nav__link">
+    Download and install Citrix Receiver
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-certificates" title="Configure certificates" class="md-nav__link">
+    Configure certificates
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#must-have" title="Must Have" class="md-nav__link">
-    Must Have
+  <a href="#ubuntu" title="Ubuntu" class="md-nav__link">
+    Ubuntu
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#may-have" title="May Have" class="md-nav__link">
-    May Have
+  <a href="#fedora" title="Fedora" class="md-nav__link">
+    Fedora
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-the-certificates-from-an-ubuntu-install" title="Get the certificates from an Ubuntu install" class="md-nav__link">
+    Get the certificates from an Ubuntu install
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#resources" title="Resources" class="md-nav__link">
-    Resources
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#examples" title="Examples" class="md-nav__link">
-    Examples
+  <a href="#install-the-certificates-on-the-fedora-machine" title="Install the certificates on the Fedora machine" class="md-nav__link">
+    Install the certificates on the Fedora machine
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-distros" title="Other distros" class="md-nav__link">
+    Other distros
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#todo" title="TODO" class="md-nav__link">
+    TODO
+  </a>
   
 </li>
       
@@ -734,54 +788,54 @@
               
                 
                 
-                <h1 id="contributingmd-details">CONTRIBUTING.md Details</h1>
-<p>Provides potential contributors the useful information on how to begin contributing to the project and increase the likelihood of their contribution being accepted. May contain links to the Code of Conduct, purpose/aim of the project, code standards, how to run/build/test etc.</p>
-<h2 id="overview">Overview</h2>
-<p>The CONTRIBUTING.md is the file that users will normally read before contributing to a project and it must provide them with the information needed to contribute to the project in a style which the owner wants. The CONTRIBUTING.md allows the owner to specify the standards and processes they want contributors to use thus setting the rules for everyone, including the rules for how the owner treats contributors. The CONTRIBUTING.md is (obviously) written in <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> and placed in the root directory of the repository.</p>
-<blockquote>
-<p>If a repo does not have a CONTRIBUTING.md then we do not class it as "open" and the owner may not want external contributions</p>
-</blockquote>
-<h3 id="must-have">Must Have</h3>
+                <h1 id="installing-citrix-receiver-on-linux">Installing Citrix Receiver on Linux</h1>
+<p>In order to access the UKHO Citrix desktop, your computer needs to have Citrix Receiver installed.  On Windows, this is a straightforward, automatic process.  On Linux, it may require a manual install and some configuration. If you get this error, then follow the instructions on this page.</p>
+<p><img alt="Linux error message" src="../error.png" /></p>
+<h2 id="download-and-install-citrix-receiver">Download and install Citrix Receiver</h2>
 <ul>
-<li>Repo owner (Can be team or individual)</li>
-<li>Contact details for owner (Email)</li>
-<li>A welcome/intro paragraph.</li>
+<li>Open a browser and navigate to the <a href="https://www.citrix.com/en-gb/downloads/citrix-receiver/linux/receiver-for-linux-latest.html">Citrix Receiver for Linux download page</a></li>
+<li>Navigate to the bottom of the page and download the relevant option from Debian Packages or RedHat packages. Both Web client and Full client seem to work</li>
+<li>Use your package manager (apt/yum/dnf) to install the downloaded package</li>
+<li>In the instructions below, the install location is referred to as $CITRIX_HOME.  Normally this will be <code>/opt/Citrix/ICAClient</code> but YMMV</li>
 </ul>
-<h3 id="may-have">May Have</h3>
-<ul>
-<li>Link to documentation</li>
-<li>Link to issue tracker</li>
-<li>Instructions on how to run tests locally</li>
-<li>Instructions on how to develop code locally</li>
-<li>Pull Request process</li>
-<li>Style guide</li>
-<li>Where a user can find help</li>
-<li>Security issue reporting</li>
-<li>How to report bugs</li>
-<li>How to request a feature</li>
-<li>Code of Conduct</li>
-<li>The recognition model(how people are thanked)</li>
-<li>Philosophy of the project</li>
-<li>Versioning process</li>
-<li>Commit message guidance</li>
-<li>Definition of done</li>
-<li>Roadmap</li>
-<li>Branching conventions</li>
-<li>Anything else that seems relevant</li>
-</ul>
-<h3 id="resources">Resources</h3>
-<ul>
-<li><a href="https://mozillascience.github.io/working-open-workshop/contributing/">Mozilla tutorial</a> - Good guide on creating/thinking about writing a CONTRIBUTING.MD</li>
-<li><a href="https://gist.github.com/PurpleBooth/b24679402957c63ec426">Template contributing.md</a> - Example base template of a CONTRIBUTING.MD</li>
-<li><a href="http://paypal.github.io/InnerSourceCommons/assets/files/InnerSourceChecklist.pdf">Understanding the InnerSource Checklist</a> - pg. 25 - Creating good house rules for guests: Writing contributing agreements</li>
-</ul>
-<h3 id="examples">Examples</h3>
-<ul>
-<li><a href="https://github.com/atom/atom/blob/master/CONTRIBUTING.md">Atom</a></li>
-<li><a href="https://github.com/opengovernment/opengovernment/blob/master/CONTRIBUTING.md">OpenGovernment</a></li>
-<li><a href="https://github.com/rails/rails/blob/master/CONTRIBUTING.md">Rails</a></li>
-<li><a href="https://gitlab.com/gitlab-org/gitlab-ce/blob/master/CONTRIBUTING.md">GitLab</a></li>
-</ul>
+<h2 id="configure-certificates">Configure certificates</h2>
+<p>For some reason, Citrix Receiver for Linux does not work out of the box on Linux.  This appears to be down to not shipping with the correct certificates.  The steps below describe how to correct this for Ubuntu and other distros. Be warned, however, that the instructions for all distros may require access to a working Ubuntu install.</p>
+<h3 id="ubuntu">Ubuntu</h3>
+<p>These instructions were taken from <a href="https://askubuntu.com/questions/901448/citrix-receiver-error-1000119">from this AskUbuntu post</a></p>
+<p>In short, telling Citrix Receiver to use the default CA certificates that ship with Ubuntu works just fine.</p>
+<pre><code class="sh">cd $CITRIX_HOME/keystore
+sudo mv cacerts cacerts.original
+sudo ln -s /etc/ssl/certs cacerts
+cd util
+sudo ./ctx_rehash
+</code></pre>
+
+<h3 id="fedora">Fedora</h3>
+<p>Unfortunately the default certificates that ship with Fedora are not sufficient. These are stored in <code>/etc/pki/ca-trust/extracted/pem</code> and the instructions above do not work for the certificates in this directory. So, it is necessary to grab the certificates from a working Ubuntu install and manually paste them into your Fedora installation.  If you don't have access to a Ubuntu install, find someone that does and ask them nicely to follow the first set of instructions below.</p>
+<h4 id="get-the-certificates-from-an-ubuntu-install">Get the certificates from an Ubuntu install</h4>
+<p>Log into the Ubuntu machine then</p>
+<pre><code class="sh">cd /etc/ssl/certs
+rsync -av --copy-links . ~/cacerts
+cd ~/cacerts
+tar cvzf ../cacerts.tar.gz .
+</code></pre>
+
+<p>This will create a file called <code>cacerts.tar.gz</code> in the home directory on the Ubuntu machine.  This file needs to be transferred to the home directory on the Fedora machine via sftp or other means.</p>
+<h4 id="install-the-certificates-on-the-fedora-machine">Install the certificates on the Fedora machine</h4>
+<pre><code class="sh">cd $CITRIX_HOME/keystore
+sudo mv cacerts cacerts.original
+sudo mkdir cacerts
+cd cacerts
+tar xf ~/cacerts.tar.gz
+cd ../util
+sudo ./ctx_rehash
+</code></pre>
+
+<p>Et voilà</p>
+<h3 id="other-distros">Other distros</h3>
+<p>Try linking the <code>$CITRIX_HOME/keystore/cacerts</code> directory to the main CA certificates directory on your distro.  If this doesn't work, the instructions for Fedora almost certainly will.</p>
+<h2 id="todo">TODO</h2>
+<p>It is unlikely that all of the certificates from the Ubuntu distro are required to make Citrix Receiver work.  It would be useful to identify the one(s) that are necessary and revise the instructions to address that certificate alone.</p>
                 
                   
                 
@@ -802,7 +856,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../linux-workstations/citrix/" title="Installing Citrix Receiver on Linux" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -811,19 +865,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Installing Citrix Receiver on Linux
+                Introduction
               </span>
             </div>
           </a>
         
         
-          <a href="../migration/" title="Migrating an existing project" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../open-guidance/contributing-details/" title="CONTRIBUTING.md Details" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Migrating an existing project
+                CONTRIBUTING.md Details
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
