@@ -50,6 +50,10 @@ A high-level set of standards acts as a guide for the creation of automated test
 
 [Test Standards](test-code-standards.md)
 
+## Principles of what and what not to automate
+
+[Guidelines](automation-guidelines.md)
+
 ## How we measure our progress
 
 We will maintain metrics to determine our current state of automation at the UKHO. The metrics will be produced by comparing the state of test automation in a product against the exemplar test pyramid.
