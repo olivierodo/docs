@@ -460,8 +460,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gherkin" title="Gherkin" class="md-nav__link">
-    Gherkin
+  <a href="#specflow-and-cucumber" title="SpecFlow and Cucumber" class="md-nav__link">
+    SpecFlow and Cucumber
   </a>
   
 </li>
@@ -754,8 +754,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gherkin" title="Gherkin" class="md-nav__link">
-    Gherkin
+  <a href="#specflow-and-cucumber" title="SpecFlow and Cucumber" class="md-nav__link">
+    SpecFlow and Cucumber
   </a>
   
 </li>
@@ -790,7 +790,7 @@
 <li>Unit Testing</li>
 <li>API Testing</li>
 <li>UI Testing</li>
-<li>Gherkin</li>
+<li>SpecFlow and Cucumber</li>
 <li>Test and Defect Management</li>
 </ol>
 <h2 id="c-and-java">C# and Java</h2>
@@ -817,20 +817,24 @@
 <li>Only use for e2e tests or explicit UI features at this level</li>
 <li>Interactions with UIs should be abstracted into a separate service/facade, not in the test Steps (e.g., Page Object Model)</li>
 </ul>
-<h2 id="gherkin">Gherkin</h2>
+<h2 id="specflow-and-cucumber">SpecFlow and Cucumber</h2>
 <ul>
-<li>Consider whether using Gherkin is required - will it add value or can the extra technical layer be avoided</li>
-<li>Feature name should reflect the area being tested</li>
-<li>Scenario name should reflect the purpose of the test, e.g. “Ensure two numbers are added correctly” rather than “add two numbers” or “add”</li>
+<li>Consider whether using these are required - will it add value, will a stakeholder be reading the tests, or can the extra technical layer be avoided?</li>
+<li>If using, publish the tests to a website for easy access using Pickles (see our <a href="../test-repositories/">Pickles Example Project</a>)</li>
+<li>If considered necessary then:<ul>
+<li>The feature name should reflect the area being tested</li>
+<li>The scenario name should reflect the purpose of the test, e.g. “Ensure two numbers are added correctly” rather than “add two numbers” or “add”</li>
 <li>Similar scenarios should be in one feature file – a feature file should only contain similar scenarios</li>
 <li>Ensure only one result is tested per scenario, try to avoid having too many assertions, better to split into different scenarios</li>
 <li>Move repeated steps into a Background</li>
 <li>Perform technical setup and teardown in the Steps classes, not in the Gherkin.</li>
 </ul>
+</li>
+</ul>
 <h2 id="test-and-defect-management">Test and Defect Management</h2>
 <ul>
 <li>For C# projects, unit and SpecFlow tests should exist in separate projects</li>
-<li>Open defects should be managed, a regular team/project review session is recommended </li>
+<li>Open defects should be managed; a regular team/project review session is recommended </li>
 </ul>
                 
                   
