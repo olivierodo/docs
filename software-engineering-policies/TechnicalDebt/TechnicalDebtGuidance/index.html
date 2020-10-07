@@ -1,0 +1,1692 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.0.1">
+    
+    
+      
+        <title>Technical Debt Guidance - UKHO Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.982221ab.css">
+      
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.1f0bcf2b.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#technical-debt-guidance" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.." title="UKHO Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              UKHO Docs
+            </span>
+            <span class="md-header-nav__topic">
+              Technical Debt Guidance
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="UKHO Docs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    UKHO Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../open-source-governance-checklist/" title="Open Source Governance Checklist" class="md-nav__link">
+      Open Source Governance Checklist
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Linux workstations
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Linux workstations
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../linux-workstations/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../linux-workstations/citrix/" title="Installing Citrix Receiver on Linux" class="md-nav__link">
+      Installing Citrix Receiver on Linux
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Open guidance
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Open guidance
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../open-guidance/contributing-details/" title="CONTRIBUTING.md Details" class="md-nav__link">
+      CONTRIBUTING.md Details
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../open-guidance/migration/" title="Migrating an existing project" class="md-nav__link">
+      Migrating an existing project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../open-guidance/open-guidance/" title="Open-Guidance" class="md-nav__link">
+      Open-Guidance
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../open-guidance/pull-request-details/" title="Making a Pull Request" class="md-nav__link">
+      Making a Pull Request
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../open-guidance/readme-details/" title="README.md Details" class="md-nav__link">
+      README.md Details
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Quality assurance
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Quality assurance
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../quality-assurance/" title="UKHO Test Community Docs" class="md-nav__link">
+      UKHO Test Community Docs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../quality-assurance/acceptance-criteria/" title="Acceptance Criteria Guidance" class="md-nav__link">
+      Acceptance Criteria Guidance
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../quality-assurance/bdd/" title="Behaviour-Driven Design (BDD)" class="md-nav__link">
+      Behaviour-Driven Design (BDD)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../quality-assurance/test-automation-strategy/" title="Test Automation Strategy" class="md-nav__link">
+      Test Automation Strategy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../quality-assurance/test-code-standards/" title="Test Automation Standards" class="md-nav__link">
+      Test Automation Standards
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../quality-assurance/test-policy/" title="Test Policy" class="md-nav__link">
+      Test Policy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../quality-assurance/test-profiles/" title="Test Engineer Profiles" class="md-nav__link">
+      Test Engineer Profiles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../quality-assurance/test-repositories/" title="GitHub Repositories" class="md-nav__link">
+      GitHub Repositories
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../quality-assurance/test-strategy/" title="Test Strategy" class="md-nav__link">
+      Test Strategy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../quality-assurance/test-tooling/" title="Test Tooling" class="md-nav__link">
+      Test Tooling
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../quality-assurance/test-vision/" title="Test Vision" class="md-nav__link">
+      Test Vision
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../quality-assurance/testing-principles/" title="Testing principles" class="md-nav__link">
+      Testing principles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../quality-assurance/ukho-quality-charter/" title="UKHO Delivery Quality Charter" class="md-nav__link">
+      UKHO Delivery Quality Charter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-14" type="checkbox" id="nav-5-14">
+    
+    <label class="md-nav__link" for="nav-5-14">
+      Roles
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-14">
+        Roles
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../quality-assurance/roles/head-of-test/" title="Head of Test" class="md-nav__link">
+      Head of Test
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../quality-assurance/roles/lead-program-test-engineer/" title="Lead Test Engineer (Program)" class="md-nav__link">
+      Lead Test Engineer (Program)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../quality-assurance/roles/lead-team-test-engineer/" title="Lead Test Engineer (Team)" class="md-nav__link">
+      Lead Test Engineer (Team)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../quality-assurance/roles/senior-test-engineer/" title="Senior Test Engineer" class="md-nav__link">
+      Senior Test Engineer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../quality-assurance/roles/test-engineer/" title="Test Engineer" class="md-nav__link">
+      Test Engineer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+    
+    <label class="md-nav__link" for="nav-6">
+      Software engineering policies
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Software engineering policies
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../" title="Software Engineering Policies" class="md-nav__link">
+      Software Engineering Policies
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CONTRIBUTING/" title="Contributing to Software Engineering Policies" class="md-nav__link">
+      Contributing to Software Engineering Policies
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3" type="checkbox" id="nav-6-3">
+    
+    <label class="md-nav__link" for="nav-6-3">
+      CodeCopyright
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-3">
+        CodeCopyright
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CodeCopyright/CodeCopyrightPolicy/" title="Code Copyright Policy" class="md-nav__link">
+      Code Copyright Policy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4" type="checkbox" id="nav-6-4">
+    
+    <label class="md-nav__link" for="nav-6-4">
+      CodeReuse
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-4">
+        CodeReuse
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CodeReuse/CodeReusePolicy/" title="Code Reuse Policy" class="md-nav__link">
+      Code Reuse Policy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      CodeReview
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        CodeReview
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CodeReview/CodeReviewPolicy/" title="Code Review Policy" class="md-nav__link">
+      Code Review Policy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-6" type="checkbox" id="nav-6-6">
+    
+    <label class="md-nav__link" for="nav-6-6">
+      CodingStandards
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-6">
+        CodingStandards
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CodingStandards/JavascriptCodingStandards/" title="JavaScript Coding Standards" class="md-nav__link">
+      JavaScript Coding Standards
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-7" type="checkbox" id="nav-6-7">
+    
+    <label class="md-nav__link" for="nav-6-7">
+      DefectManagement
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-7">
+        DefectManagement
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DefectManagement/DefectManagementPolicy/" title="Defect Management Policy" class="md-nav__link">
+      Defect Management Policy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-8" type="checkbox" id="nav-6-8">
+    
+    <label class="md-nav__link" for="nav-6-8">
+      Induction
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-8">
+        Induction
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Induction/LeadDeveloperInduction/" title="Induction sheet for new Lead Developers" class="md-nav__link">
+      Induction sheet for new Lead Developers
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-9" type="checkbox" id="nav-6-9">
+    
+    <label class="md-nav__link" for="nav-6-9">
+      OpenSourceContribution
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-9">
+        OpenSourceContribution
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OpenSourceContribution/OpenSourceContributionPolicy/" title="Open Source Contribution" class="md-nav__link">
+      Open Source Contribution
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OpenSourceContribution/OpenSourceGovernanceChecklist/" title="Open Source Governance Checklist" class="md-nav__link">
+      Open Source Governance Checklist
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-10" type="checkbox" id="nav-6-10">
+    
+    <label class="md-nav__link" for="nav-6-10">
+      OpenSourceUse
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-10">
+        OpenSourceUse
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OpenSourceUse/OpenSourceUsePolicy/" title="Use of Free Open Source Software" class="md-nav__link">
+      Use of Free Open Source Software
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-11" type="checkbox" id="nav-6-11">
+    
+    <label class="md-nav__link" for="nav-6-11">
+      PairProgramming
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-11">
+        PairProgramming
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../PairProgramming/PairProgrammingPolicy/" title="Pair Programming Policy" class="md-nav__link">
+      Pair Programming Policy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-12" type="checkbox" id="nav-6-12">
+    
+    <label class="md-nav__link" for="nav-6-12">
+      SecureDevelopment
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-12">
+        SecureDevelopment
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SecureDevelopment/SecureDevelopmentPolicy/" title="Objective" class="md-nav__link">
+      Objective
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-13" type="checkbox" id="nav-6-13">
+    
+    <label class="md-nav__link" for="nav-6-13">
+      SourceControl
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-13">
+        SourceControl
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SourceControl/SourceControlPolicy/" title="Source Control" class="md-nav__link">
+      Source Control
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-14" type="checkbox" id="nav-6-14">
+    
+    <label class="md-nav__link" for="nav-6-14">
+      SystemDocumentation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-14">
+        SystemDocumentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SystemDocumentation/SystemDocumentationPolicy/" title="System Documentation Policy" class="md-nav__link">
+      System Documentation Policy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-15" type="checkbox" id="nav-6-15" checked>
+    
+    <label class="md-nav__link" for="nav-6-15">
+      TechnicalDebt
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-15">
+        TechnicalDebt
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Technical Debt Guidance
+      </label>
+    
+    <a href="./" title="Technical Debt Guidance" class="md-nav__link md-nav__link--active">
+      Technical Debt Guidance
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#raising-technical-debt" title="Raising Technical Debt" class="md-nav__link">
+    Raising Technical Debt
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#title" title="Title" class="md-nav__link">
+    Title
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#description" title="Description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#refining-technical-debt" title="Refining Technical Debt" class="md-nav__link">
+    Refining Technical Debt
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technical-debt-refinement" title="Technical Debt Refinement" class="md-nav__link">
+    Technical Debt Refinement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#effort-assessment" title="Effort Assessment" class="md-nav__link">
+    Effort Assessment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-this-meshes-with-raid" title="How this meshes with RAID" class="md-nav__link">
+    How this meshes with RAID
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-technical-debt" title="Accessing Technical Debt" class="md-nav__link">
+    Accessing Technical Debt
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#team-technical-debt-queries" title="Team Technical Debt queries" class="md-nav__link">
+    Team Technical Debt queries
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq" title="FAQ" class="md-nav__link">
+    FAQ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#points-of-contact" title="Points of Contact" class="md-nav__link">
+    Points of Contact
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../TechnicalDebtPolicy/" title="Technical Debt Policy" class="md-nav__link">
+      Technical Debt Policy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-16" type="checkbox" id="nav-6-16">
+    
+    <label class="md-nav__link" for="nav-6-16">
+      TechnologyGovernance
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-16">
+        TechnologyGovernance
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../TechnologyGovernance/TechnologyGovernance/" title="Technology Governance" class="md-nav__link">
+      Technology Governance
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-17" type="checkbox" id="nav-6-17">
+    
+    <label class="md-nav__link" for="nav-6-17">
+      ThirdPartyLicensing
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-17">
+        ThirdPartyLicensing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ThirdPartyLicensing/ThirdPartyLicensingGuidance/" title="Licensing of Third Party Libraries Guidance" class="md-nav__link">
+      Licensing of Third Party Libraries Guidance
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ThirdPartyLicensing/ThirdPartyLicensingPolicy/" title="Licensing of Third Party Libraries Policy" class="md-nav__link">
+      Licensing of Third Party Libraries Policy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-18" type="checkbox" id="nav-6-18">
+    
+    <label class="md-nav__link" for="nav-6-18">
+      UnitTesting
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-18">
+        UnitTesting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../UnitTesting/UnitTestingPolicy/" title="Unit Testing Policy" class="md-nav__link">
+      Unit Testing Policy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Teams
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Teams
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../teams/proteus/" title="Team Proteus" class="md-nav__link">
+      Team Proteus
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#raising-technical-debt" title="Raising Technical Debt" class="md-nav__link">
+    Raising Technical Debt
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#title" title="Title" class="md-nav__link">
+    Title
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#description" title="Description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#refining-technical-debt" title="Refining Technical Debt" class="md-nav__link">
+    Refining Technical Debt
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technical-debt-refinement" title="Technical Debt Refinement" class="md-nav__link">
+    Technical Debt Refinement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#effort-assessment" title="Effort Assessment" class="md-nav__link">
+    Effort Assessment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-this-meshes-with-raid" title="How this meshes with RAID" class="md-nav__link">
+    How this meshes with RAID
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-technical-debt" title="Accessing Technical Debt" class="md-nav__link">
+    Accessing Technical Debt
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#team-technical-debt-queries" title="Team Technical Debt queries" class="md-nav__link">
+    Team Technical Debt queries
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq" title="FAQ" class="md-nav__link">
+    FAQ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#points-of-contact" title="Points of Contact" class="md-nav__link">
+    Points of Contact
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="technical-debt-guidance">Technical Debt Guidance</h1>
+<h2 id="raising-technical-debt">Raising Technical Debt</h2>
+<p>Technical debt that will not be resolved in the sprint identified <strong>SHOULD</strong> be raised as a PBI in the relevant area of Azure DevOps or Azure DevOps Server. When raising Technical Debt, please add the following information to the Technical Debt PBI:</p>
+<h3 id="title">Title</h3>
+<p><code>Technical Debt - {Project} - {Concise outline of Technical Debt item} - {Date of failure if known}</code></p>
+<h3 id="description">Description</h3>
+<p>The description of the Technical Debt item should include the following as a minimum:</p>
+<ul>
+<li>The repository the Technical Debt lives within (a link to the repo would be good but the name would suffice)</li>
+<li>Description of the issue in as much detail as you can provide, including class/file names if this can be included</li>
+<li>A proposed solution or ideas for a fix **</li>
+<li>Cost/Benefit and risk of the Technical Debt item, simply as a "why should this be fixed?/How long would it take?"</li>
+<li>The Technical Debt PBI <strong>MUST</strong> be tagged with the <code>Technical Debt</code> tag and any further appropriate tags, such as the following:</li>
+<li>Product Name (could be multiple, see the product list in AppRegister; http://appregister/)</li>
+<li>Security</li>
+<li>Availability</li>
+<li>Portability</li>
+<li>Compatibility</li>
+<li>Performance</li>
+<li>Maintainability</li>
+<li>Knowledge</li>
+<li>Automation</li>
+<li>Testing</li>
+<li>Out-Of-Support</li>
+<li>Date-of-Failure **</li>
+<li>Investigate To Remove - This tag has been used to mark a Technical Debt item that may already have been completed or is going to be irrelevant due to other work.</li>
+</ul>
+<p>** - Where appropriate/known</p>
+<p>An example of the above:</p>
+<p><img alt="Example Tech Debt PBI" src="../example_tech_debt_item.png" /></p>
+<h2 id="refining-technical-debt">Refining Technical Debt</h2>
+<h3 id="technical-debt-refinement">Technical Debt Refinement</h3>
+<ul>
+<li>Identify old Technical Debt PBIs and refine them to meet the newly agreed model specified above</li>
+<li>Identify any details that can be added to the Technical Debt PBI</li>
+<li>Assign a Technical Debt priority tag to the PBI:</li>
+<li>TD1 - High business/technical value, high risk debt that needs to be paid off ASAP (a Security or Out-Of-Support tag should automatically be considered for a TD1 prioritisation).</li>
+<li>TD2 - High business/technical value (cost reduction, blocker removing, maintainability improvement), lower risk, a change that should be worked on when time/opportunity permits and is not something that can be accepted or supported long term.</li>
+<li>TD3 - Tech debt that has been accepted as a risk but through paying off would add value through improving usability, maintainability, reliability or performance.</li>
+<li>TD4 - Accepted risk from the business, safe to leave until service reaches end of life. Worth tracking in case developers are working in the area and can complete as quick wins.  </li>
+</ul>
+<p>If the technical debt item doesn't meet any of the above it should be considered as debt with little or no value to resolution and considered for removal from the backlog.</p>
+<p>If during refinement an imminent issue is discovered (e.g. old Technical Debt, with high risk, which is time sensitive, but has not been addressed) this should be refined and flagged to a senior Solution Architect.</p>
+<p>When the technical debt PBI has been refined (i.e. each item on this page has been considered and applied) ensure that you add the tag <code>TD-APPROVED</code> to show this.</p>
+<h3 id="effort-assessment">Effort Assessment</h3>
+<p>An initial effort is applied based on the following scale (all assumptions are based on paired times not total time and are approximate t-shirt sizes):</p>
+<ol>
+<li>XS</li>
+<li>S change</li>
+<li>M change</li>
+<li>L change</li>
+<li>XL change</li>
+</ol>
+<p>These are not final estimates of effort as when a team picks up the tech debt PBI they are expected to investigate and task the PBI according to their own team ways of working.</p>
+<h3 id="how-this-meshes-with-raid">How this meshes with RAID</h3>
+<p>A technical debt PBI should be created if the team is not planning on addressing the technical debt within the current sprint. We advise that teams carrying out RAID analysis create technical debt PBIs in addition to this analysis. Consider that some technical debt items have been long lived in the past this will help support or future development teams consider the technical debt for future resolution.</p>
+<h2 id="accessing-technical-debt">Accessing Technical Debt</h2>
+<p>There <strong>MUST BE</strong> a centralised shared query in each project area that can be run in Azure Dev Ops (TFS) and Azure Dev Ops Server (VSTS) which centralises all tagged technical debt PBIs into one result set. This pulls from all accessible backlogs.</p>
+<p>Customer:</p>
+<p><a href="https://github.com/UKHO/docs-internal/blob/main/links.md">Link to internal queries - UKHO access only</a></p>
+<p>Data Portal:</p>
+<p>Applications:</p>
+<p>TODO: (ADD OTHER TEAMS)</p>
+<p>Note that a new Technical Debt dashboard is also under construction. Link: TBC</p>
+<h3 id="team-technical-debt-queries">Team Technical Debt queries</h3>
+<p>Each team should have its own query. This should be named <code>Technical Debt - Basic</code> and be stored in a <code>Shared Queries\Technical Debt</code> folder. This will ensure consistency across all teams.</p>
+<h2 id="faq">FAQ</h2>
+<p><strong>When is a defect (bug) technical debt?</strong><br />
+Defects (also known as bugs) are only considered technical debt if the decision has been made to accept or otherwise leave the defect unresolved. In this case the defect should be marked as technical debt following the provided guidance. If the defect is something intended to be fixed within current or next sprint, then do not mark it as technical debt.</p>
+<h2 id="points-of-contact">Points of Contact</h2>
+<ul>
+<li>Policy owner  - ​Matthew Slade</li>
+<li>Policy Editor - Greg Zealley</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../SystemDocumentation/SystemDocumentationPolicy/" title="System Documentation Policy" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                System Documentation Policy
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../TechnicalDebtPolicy/" title="Technical Debt Policy" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Technical Debt Policy
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.b806dc00.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+    
+  </body>
+</html>
