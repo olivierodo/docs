@@ -36,7 +36,7 @@
     
     
       
-        <title>Test Tooling - UKHO Docs</title>
+        <title>Browser Automation - UKHO Docs</title>
       
     
     
@@ -75,7 +75,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#test-tooling" tabindex="1" class="md-skip">
+      <a href="#browser-automation" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -100,7 +100,7 @@
               UKHO Docs
             </span>
             <span class="md-header-nav__topic">
-              Test Tooling
+              Browser Automation
             </span>
           
         </div>
@@ -331,6 +331,125 @@
           
           
 
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Browser Automation
+      </label>
+    
+    <a href="./" title="Browser Automation" class="md-nav__link md-nav__link--active">
+      Browser Automation
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cypress" title="Cypress" class="md-nav__link">
+    Cypress
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playwright" title="Playwright" class="md-nav__link">
+    Playwright
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selenium" title="Selenium" class="md-nav__link">
+    Selenium
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#which-tool-should-i-use" title="Which tool should I use?" class="md-nav__link">
+    Which tool should I use?
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-just-want-to-do-pure-ui-testing" title="I just want to do pure UI testing" class="md-nav__link">
+    I just want to do pure UI testing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-want-to-do-e2e-integration-testing-but-our-application-uses-msal-azure-b2c-authentication" title="I want to do E2E / Integration testing but our application uses MSAL Azure B2C authentication" class="md-nav__link">
+    I want to do E2E / Integration testing but our application uses MSAL Azure B2C authentication
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-application-is-a-single-page-application-or-a-multi-page-application-in-the-same-domain" title="The application is a Single Page Application or a Multi Page Application in the same domain" class="md-nav__link">
+    The application is a Single Page Application or a Multi Page Application in the same domain
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-application-has-multiple-tabs-windows-domains" title="The application has multiple tabs / windows / domains" class="md-nav__link">
+    The application has multiple tabs / windows / domains
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-need-to-test-against-non-chromium-based-browser-versions-eg-edge-and-ie" title="I need to test against non-chromium based browser versions (e.g. Edge and IE)" class="md-nav__link">
+    I need to test against non-chromium based browser versions (e.g. Edge and IE)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tool-capabilities" title="Tool Capabilities" class="md-nav__link">
+    Tool Capabilities
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
 
   <li class="md-nav__item">
     <a href="../test-automation-strategy/" title="Test Automation Strategy" class="md-nav__link">
@@ -396,70 +515,6 @@
     <a href="../test-strategy/" title="Test Strategy" class="md-nav__link">
       Test Strategy
     </a>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Test Tooling
-      </label>
-    
-    <a href="./" title="Test Tooling" class="md-nav__link md-nav__link--active">
-      Test Tooling
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#standalone" title="Standalone" class="md-nav__link">
-    Standalone
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#net" title=".NET" class="md-nav__link">
-    .NET
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#java" title="Java" class="md-nav__link">
-    Java
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1305,22 +1360,77 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#standalone" title="Standalone" class="md-nav__link">
-    Standalone
+  <a href="#cypress" title="Cypress" class="md-nav__link">
+    Cypress
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#net" title=".NET" class="md-nav__link">
-    .NET
+  <a href="#playwright" title="Playwright" class="md-nav__link">
+    Playwright
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#java" title="Java" class="md-nav__link">
-    Java
+  <a href="#selenium" title="Selenium" class="md-nav__link">
+    Selenium
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#which-tool-should-i-use" title="Which tool should I use?" class="md-nav__link">
+    Which tool should I use?
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-just-want-to-do-pure-ui-testing" title="I just want to do pure UI testing" class="md-nav__link">
+    I just want to do pure UI testing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-want-to-do-e2e-integration-testing-but-our-application-uses-msal-azure-b2c-authentication" title="I want to do E2E / Integration testing but our application uses MSAL Azure B2C authentication" class="md-nav__link">
+    I want to do E2E / Integration testing but our application uses MSAL Azure B2C authentication
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-application-is-a-single-page-application-or-a-multi-page-application-in-the-same-domain" title="The application is a Single Page Application or a Multi Page Application in the same domain" class="md-nav__link">
+    The application is a Single Page Application or a Multi Page Application in the same domain
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-application-has-multiple-tabs-windows-domains" title="The application has multiple tabs / windows / domains" class="md-nav__link">
+    The application has multiple tabs / windows / domains
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-need-to-test-against-non-chromium-based-browser-versions-eg-edge-and-ie" title="I need to test against non-chromium based browser versions (e.g. Edge and IE)" class="md-nav__link">
+    I need to test against non-chromium based browser versions (e.g. Edge and IE)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tool-capabilities" title="Tool Capabilities" class="md-nav__link">
+    Tool Capabilities
   </a>
   
 </li>
@@ -1342,133 +1452,141 @@
               
                 
                 
-                <h1 id="test-tooling">Test Tooling</h1>
-<h2 id="standalone">Standalone</h2>
+                <h1 id="browser-automation">Browser Automation</h1>
+<p>This section will cover the browser automation tools we use at the UKHO and the recommended uses for each one.</p>
+<p>The three recommended tools for Browser Automation (for UI, e2e and integration testing) are:</p>
+<h2 id="cypress">Cypress</h2>
+<p>Cypress is a front end testing tool built for testing web apps. Cypress runs within available and supported browsers installed on the machine (the Electron browser is baked into Cypress and does not need to be installed separately). Cypress test code is executed directly within the browser as JavaScript, meaning there are no language or driver bindings and the tests can execute much faster and with more reliability. It also has full DOM and network traffic recording to aid debugging within the Cypress Test Runner.</p>
+<p>Cypress, however, does have its limitations. It has been created to test your application and your application only, and works best if the application is a Single Page Application; or a Multi Page Application in the same domain that does not utilise pop-ups or new tabs / windows.</p>
+<p>Some authentication scenarios can be worked out, primarily SSO and NTLM Windows Auth, but not MSAL Azure B2C Auth.</p>
+<h2 id="playwright">Playwright</h2>
+<p>Playwright enables fast, reliable and capable automation across all modern browsers. It is a Node.js library to automate Chromium, Firefox and WebKit with a single API. Upon install, Playwright downloads a version of Chromium/Chrome and uses the Chrome DevTools Protocol to orchestrate the browser instance. For Firefox and WebKit engines, Playwright downloads the actual browser but extends their debugging protocol capabilities to provide a unified API and features. There is no modification of the actual browsers, so that it is expected to work exactly the same in the testing and the real user's browser. Go <a href="https://github.com/microsoft/playwright/blob/master/docs/installation.md">here</a> for more information on the browser binaries.</p>
+<p>One of the big disadvantages over Cypress is that it does not have a fully supported Test Runner (<a href="https://github.com/microsoft/playwright-test">playwright-test</a> is currently in its first preview release), therefore screenshots, videos, DOM and network traffic are not recorded out of the box, making debugging tests less intuitive.</p>
+<p>The core advantage of using Playwright over Cypress is that it is an out-of-process automation driver that is not limited by the scope of in-page JavaScript execution and can automate scenarios with multiple pages and popups.</p>
+<p>Playwright's documentation and community is not as comprehensive as Cypress or Selenium, yet, it is constantly being added to as the tool is developed and the community is growing.</p>
+<h2 id="selenium">Selenium</h2>
+<p>Selenium is a tool for web browser automation that uses WebDrivers to remotely control browser instances and emulate a user’s interaction with the browser. This allows tests to be run across many browsers and versions using the associated WebDriver.</p>
+<p>One of the reasons that Selenium is popular is because of its available language bindings, these include Java, C#, JavaScript and Python.</p>
+<p>Selenium is a very good tool to automate true E2E and user interactions, but it takes time and effort to get the framework right, and then there is the overhead of maintaining it along with the WebDrivers and browser versions (though this overhead can be reduced through the use of tools such as <a href="https://github.com/UKHO/ChromeDriverBinarySync-PSModule">automated driver synchronisation</a>.</p>
+<p>It is also not as fast or intuitive as Cypress or Playwright.</p>
+<h2 id="which-tool-should-i-use">Which tool should I use?</h2>
+<p>Here is a list of <strong>sample</strong> questions / statements and responses to work through (alongside the tool capabilities) with a <strong>Test Lead to decide which tool is right for the job</strong>.</p>
+<h3 id="i-just-want-to-do-pure-ui-testing">I just want to do pure UI testing</h3>
+<blockquote>
+<p>Use Cypress and stub or mock external dependencies as required.</p>
+</blockquote>
+<h3 id="i-want-to-do-e2e-integration-testing-but-our-application-uses-msal-azure-b2c-authentication">I want to do E2E / Integration testing but our application uses MSAL Azure B2C authentication</h3>
+<blockquote>
+<p>Use Playwright. As this authentication requires interactive login, Cypress cannot deal with this use case.</p>
+</blockquote>
+<h3 id="the-application-is-a-single-page-application-or-a-multi-page-application-in-the-same-domain">The application is a Single Page Application or a Multi Page Application in the same domain</h3>
+<blockquote>
+<p>Use Cypress. There is a package to deal with NTLM(Windows) authentication and recipes for general SSO.</p>
+</blockquote>
+<h3 id="the-application-has-multiple-tabs-windows-domains">The application has multiple tabs / windows / domains</h3>
+<blockquote>
+<p>Use Playwright.</p>
+</blockquote>
+<h3 id="i-need-to-test-against-non-chromium-based-browser-versions-eg-edge-and-ie">I need to test against non-chromium based browser versions (e.g. Edge and IE)</h3>
+<blockquote>
+<p>If yes, consider if this needs to be automated. If it does then
+Selenium, if not refer back to the previous questions.</p>
+</blockquote>
+<h2 id="tool-capabilities">Tool Capabilities</h2>
+<p>This section will outline the capabilities of each to assist in the selection of the correct tool.</p>
 <table>
 <thead>
 <tr>
-<th>Tool</th>
-<th>Notes</th>
-<th>Links</th>
-<th>Version info (if applicable)</th>
+<th>Capability</th>
+<th>Cypress</th>
+<th>Playwright</th>
+<th>Selenium</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>ChromeDriver</td>
-<td>Chrome driver for Selenium</td>
-<td><a href="https://chromedriver.chromium.org/">https://chromedriver.chromium.org/</a></td>
-<td></td>
+<td>Documentation</td>
+<td>Yes (<a href="https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell">link</a>)</td>
+<td>Yes (<a href="https://playwright.dev/">link</a>)</td>
+<td>Yes (<a href="https://www.selenium.dev/documentation/en/">link</a>)</td>
 </tr>
 <tr>
-<td>OWASP Zap</td>
-<td>Vulnerability scanning (Web and API)</td>
-<td><a href="https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project">https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project</a></td>
-<td></td>
+<td>Relative speed of execution</td>
+<td>Fastest</td>
+<td>Fast</td>
+<td>Slowest</td>
 </tr>
 <tr>
-<td>Pickles</td>
-<td>Living documentation generator</td>
-<td><a href="http://www.picklesdoc.com/">http://www.picklesdoc.com/</a></td>
-<td></td>
+<td>Open-source</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td>Postman</td>
-<td>Rest API client</td>
-<td><a href="https://www.getpostman.com/">https://www.getpostman.com/</a></td>
-<td></td>
+<td>Supported Browsers</td>
+<td>Chrome, Edge (Chromium), Electron, Firefox</td>
+<td>Chrome, Edge (Chromium), Safari (WebKit), Firefox</td>
+<td>Chrome, Edge (Legacy and Chromium), Safari, Firefox, Internet Explorer</td>
 </tr>
 <tr>
-<td>Selenium</td>
-<td>Browser automation</td>
-<td><a href="https://www.seleniumhq.org/">https://www.seleniumhq.org/</a></td>
-<td></td>
+<td>Supported Languages</td>
+<td>JavaScript</td>
+<td>JavaScript</td>
+<td>JavaScript, Java, C#, Python, Ruby</td>
 </tr>
 <tr>
-<td>SOAP UI</td>
-<td>REST and SOAP client</td>
-<td><a href="https://www.soapui.org">https://www.soapui.org</a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="net">.NET</h2>
-<table>
-<thead>
-<tr>
-<th>Tool</th>
-<th>Notes</th>
-<th>Links</th>
-<th>Version info (if applicable)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fluent Assertions</td>
-<td>Readable assertions compatible with all unit test frameworks</td>
-<td><a href="https://fluentassertions.com/">https://fluentassertions.com/</a></td>
-<td></td>
+<td>Cross Domain Support</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td>Polly</td>
-<td>.NET resilience and transient-fault-handling library</td>
-<td><a href="https://github.com/App-vNext/Polly">https://github.com/App-vNext/Polly</a></td>
-<td></td>
+<td>Supports Multiple Tabs</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td>SpecFlow</td>
-<td>Binding Business Requirements to .NET Code</td>
-<td><a href="https://specflow.org/">https://specflow.org/</a></td>
-<td></td>
+<td>Supports Multiple Pages</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td>Visual Studio Profiling</td>
-<td>Measure app performance</td>
-<td><a href="https://docs.microsoft.com/en-us/visualstudio/profiling/?view=vs-2019">https://docs.microsoft.com/en-us/visualstudio/profiling/?view=vs-2019</a></td>
-<td></td>
+<td>Accessing iFrames</td>
+<td>Not fully supported</td>
+<td>Yes</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td>Win App Driver</td>
-<td>Windows Application Driver</td>
-<td><a href="https://github.com/microsoft/WinAppDriver">https://github.com/microsoft/WinAppDriver</a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="java">Java</h2>
-<table>
-<thead>
-<tr>
-<th>Tool</th>
-<th>Notes</th>
-<th>Links</th>
-<th>Version info (if applicable)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Cucumber</td>
-<td>Binding Business Requirements to Java code</td>
-<td><a href="https://cucumber.io/docs">https://cucumber.io/docs</a></td>
-<td></td>
+<td>Auto-wait</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
 </tr>
 <tr>
-<td>Jmeter</td>
-<td>Load test functional behaviour and measure performance</td>
-<td><a href="https://jmeter.apache.org/">https://jmeter.apache.org/</a></td>
-<td></td>
+<td>Intercept Network Traffic</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No (currently)</td>
 </tr>
 <tr>
-<td>REST-assured</td>
-<td>Testing and validating REST services</td>
-<td><a href="http://rest-assured.io/">http://rest-assured.io/</a></td>
-<td></td>
+<td>Screenshots on failure</td>
+<td>Yes (Built in)</td>
+<td>Yes (Not built in)</td>
+<td>Yes (Not built in)</td>
 </tr>
 <tr>
-<td>swagger-request-validator</td>
-<td>A Java library for validating request/responses against a OpenAPI / Swagger specification</td>
-<td><a href="https://bitbucket.org/atlassian/swagger-request-validator">https://bitbucket.org/atlassian/swagger-request-validator</a></td>
-<td></td>
+<td>Record Test</td>
+<td>Yes (Built in)</td>
+<td>Yes (Not built in)</td>
+<td>Yes (Not built in / not easy to implement)</td>
+</tr>
+<tr>
+<td>Full DOM recording</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
 </tr>
 </tbody>
 </table>
@@ -1492,7 +1610,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../test-strategy/" title="Test Strategy" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../bdd/" title="Behaviour Driven Development (BDD)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1501,19 +1619,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Test Strategy
+                Behaviour Driven Development (BDD)
               </span>
             </div>
           </a>
         
         
-          <a href="../test-vision/" title="Test Vision" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../test-automation-strategy/" title="Test Automation Strategy" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Test Vision
+                Test Automation Strategy
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
