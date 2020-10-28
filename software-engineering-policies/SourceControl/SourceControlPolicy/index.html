@@ -998,9 +998,66 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Source Control
+      </label>
+    
     <a href="./" title="Source Control" class="md-nav__link md-nav__link--active">
       Source Control
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#branch-protection" title="Branch Protection" class="md-nav__link">
+    Branch Protection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branching" title="Branching" class="md-nav__link">
+    Branching
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-in-comments" title="Check-in comments" class="md-nav__link">
+    Check-in comments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verification" title="Verification" class="md-nav__link">
+    Verification
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-release-configuration" title="Build / Release Configuration" class="md-nav__link">
+    Build / Release Configuration
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -1272,6 +1329,50 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#branch-protection" title="Branch Protection" class="md-nav__link">
+    Branch Protection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branching" title="Branching" class="md-nav__link">
+    Branching
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-in-comments" title="Check-in comments" class="md-nav__link">
+    Check-in comments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verification" title="Verification" class="md-nav__link">
+    Verification
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-release-configuration" title="Build / Release Configuration" class="md-nav__link">
+    Build / Release Configuration
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1284,7 +1385,38 @@
                 
                 
                 <h1 id="source-control">Source Control</h1>
-<p>(Under construction)</p>
+<ul>
+<li>All code <strong>must</strong> be stored in a source code repository.</li>
+<li>Git is the preferred method of source control.</li>
+<li>If hosted at the UKHO, these must be used on the central Azure DevOps Server system.</li>
+<li>It is acceptable to use our official Azure DevOps instance on Azure to provide version control.</li>
+<li>It is acceptable (and preferred) to use GitHub under our official UKHO organisation.</li>
+<li><strong>No other source control systems are permitted.</strong></li>
+<li>Any source code found in any other source control method must first be migrated and proven to build via a CI pipeline.</li>
+<li>All new source will host a primary branch called <em>trunk</em> or <em>main</em> over <em>master</em>.</li>
+</ul>
+<h2 id="branch-protection">Branch Protection</h2>
+<p>Suitable branch protection should be setup, depending on factors agreed by the team, to avoid merging to main.</p>
+<p>Some suggestions are:</p>
+<ul>
+<li>using the code owner file</li>
+<li>ensuring a team is associated as an admin on the repository</li>
+<li>assigning the team as the only members who can merge</li>
+<li>apply to administrators</li>
+<li>A team member who is an admin on the repository could bypass the protection</li>
+</ul>
+<h2 id="branching">Branching</h2>
+<p>Branching policies and schemes are decided at the team level, according to that team's needs.</p>
+<p>Branching policy and naming conventions are the responsibility of the lead engineers and must be published to the team.</p>
+<h2 id="check-in-comments">Check-in comments</h2>
+<p>All check-ins must be accompanied by a comment.  This should be enforced by the tooling.  The check-in comments should be subject to review as part of code review.</p>
+<p>The commits should be small and concise and the commit message should answer "Applying this change will...".</p>
+<h2 id="verification">Verification</h2>
+<p>A team's source control system must be open to inspection, including history of check-in comments.</p>
+<p>A team's branching policy and naming conventions must be available for verification.</p>
+<h2 id="build-release-configuration">Build / Release Configuration</h2>
+<p>Build and release pipelines should be under source control using YAML builds.</p>
+<p>Secrets should be provided by variable groups and possibly backed by a keyvault to allow for ease of maintenance.</p>
                 
                   
                 
