@@ -89,7 +89,7 @@ Tests should be added at the correct level of the test pyramid – lower is bett
 ### Safety
 
 * Safety assurance is part of our core software engineering processes (ensuring our products are safe for the end user)
-* We have adopted [BS EN 61508-3:2010](https://fdocuments.in/document/iec-61508-6.html) as our safety standard
+* We are aligning to Def Stan 0056, DSA 02 DMR Regs [See MOD link] (https://www.asems.mod.uk) as our safety standard
 * Safety is the responsibility of the whole team and is championed by the Test Engineer
 
 ### Security
